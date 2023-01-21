@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400&family=Karla:wght@800&display=swap" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
+    <link href="input.css" rel="stylesheet">
     <title>Random Password Generator</title>
 </head>
 <body>
@@ -17,8 +18,12 @@
                 <h1>Generate a <span>random password</span></h1>
                 <h4>Never us an insecure password again</h4>
             </div>
-            <div>
-                <button id="generate-btn">General passwords</button>
+                <button id="generate-btn">Generate passwords</button>
+                <div class="input-container">
+                    <input type="range" min="8" max="15" class="slider" id="myRange">
+                    <input type="checkbox" class="checkbox">
+                    <input type="checkbox" class="checkbox">
+                </div>
             </div>
         </section>
         <div class="password-wrapper">
