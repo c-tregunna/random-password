@@ -20,17 +20,31 @@
             </div>
                 <button id="generate-btn">Generate passwords</button>
                 <div class="input-container">
-                    <input type="range" min="8" max="15" class="slider" id="myRange">
-                    <input type="checkbox" class="checkbox">
-                    <input type="checkbox" class="checkbox">
+                    <div class="input-wrap">
+                        <input type="range" min="8" max="15" class="slider" value="15" id="length-slider">
+                        <p id="slider-value"></p>
+                    </div>
+                    <div class="input-wrap">
+                        <input type="checkbox" class="checkbox" id="num-check">
+                        <p>Numbers</p>
+                    </div>
+                    <div class="input-wrap">
+                        <input type="checkbox" class="checkbox" id="sym-check">
+                        <p>Symbols</p>
+                    </div>
                 </div>
-            </div>
         </section>
         <div class="password-wrapper">
-            <div id="password-container-one"></div>
-            <div id="password-container-two"></div>
+            <div class="password-container">
+                <div id="password-container-one"></div>
+                <button id="copy-one">Copy to clipboard</button>
+            </div>
+            <div class="password-container">
+                <div id="password-container-two"></div>
+                <button id="copy-two">Copy to clipboard</button>
+            </div>
         </div>
     </main>
-<script type="text/javascript" src="index.js"></script>
+<script src="index.js"></script>
 </body>
 </html>
