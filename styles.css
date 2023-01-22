@@ -47,6 +47,7 @@ h1,
     height: 50%;
     border-bottom: 1px solid var(--dark-blue);
     margin-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 h1 {
