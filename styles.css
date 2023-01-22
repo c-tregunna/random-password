@@ -27,7 +27,7 @@ main {
     margin-top: 10vh;
     width: 90%;
     max-width: 460px;
-    height: 65vh;
+    height: 650px;
     background-color: var(--background);
     padding: 16px;
 
@@ -123,6 +123,6 @@ span {
     }
 
     main {
-        height: 60vh;
+        height:550px
     }
 }
