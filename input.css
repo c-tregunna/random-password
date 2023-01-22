@@ -17,6 +17,7 @@ input.checkbox {
     -webkit-appearance: none;
     transition: background .3s rgba(0,0,0,0.15);
     margin: 0;
+    padding: 8px;
 }
 
 input.checkbox::after {
@@ -30,6 +31,11 @@ input.checkbox::after {
     width: 1.25rem;
     background-color: var(--dark-blue);
     transition: left .3s;
+}
+
+input.checkbox::before {
+    content: "On";
+    font-size: .7rem
 }
 
 input.checkbox:checked {
