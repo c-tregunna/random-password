@@ -20,7 +20,7 @@ let copyPasswordOne = document.getElementById("copy-one");
 let copyPasswordTwo = document.getElementById("copy-two");
 
 //////*** Event Listener - show value of slider ***//////
-slider.addEventListener("change", function() {
+slider.addEventListener("input", function() {
     sliderValue.textContent = slider.value; // display value of slider in p tag
 })
 

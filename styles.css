@@ -23,6 +23,16 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
+body.light {
+    background-color: var(--white);
+    color: var(--black)
+}
+
+button.lighter {
+    background-color: var(--background);
+    color: var(--green);
+}
+
 main {
     margin-top: 10vh;
     width: 90%;
@@ -78,7 +88,9 @@ span {
     transition: background-color .3s ease-in-out;
 }
 
-#generate-btn:hover {
+#generate-btn:hover,
+#copy-one:hover,
+#copy-two:hover {
     background-color: #35a361;
 }
 
