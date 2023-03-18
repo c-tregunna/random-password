@@ -59,28 +59,40 @@ generatePasswordBtn.addEventListener('click', function() {
 })
 
 ////*** Event Listener & functions - copy password ***//////
-let copyFirstPassword = async () => {
-    try {
-        await navigator.clipboard.writeText(passwordContainerOne.innerHTML); //grab the inner html - text of the password
-        //console.log("copied password 1");
-    } catch (err) {
-        console.error('Failed to copy: ', err);
-    } copyPasswordOne.textContent = "Copied"; //change text of copy button to show copied
-}
-
-let copySecondPassword = async () => {
-    try {
-        await navigator.clipboard.writeText(passwordContainerTwo.innerHTML); //grab the inner html - text of the password
-        //console.log("copied password 2");
-    } catch (err) {
-        console.error('Failed to copy: ', err);
-    } copyPasswordTwo.textContent = "Copied"; //change text of copy button to show copied
-}
-
 copyPasswordOne.addEventListener('click', function() {
-    copyFirstPassword();
+    navigator.clipboard.writeText(passwordContainerOne.innerHTML);
+    copyPasswordOne.textContent = "Copied";
 })
 
 copyPasswordTwo.addEventListener('click', function() {
-    copySecondPassword();
+    navigator.clipboard.writeText(passwordContainerTwo.innerHTML);
+    copyPasswordTwo.textContent = "Copied";
 })
+
+
+
+
+
+
+
+
+
+// ORIGNAIL COPY CODE - DIDNT MAKE SENSE, ABOVE DOES!
+
+// let copyFirstPassword = async () => {
+//     try {
+//         await navigator.clipboard.writeText(passwordContainerOne.innerHTML); //grab the inner html - text of the password
+//         //console.log("copied password 1");
+//     } catch (err) {
+//         console.error('Failed to copy: ', err);
+//     } copyPasswordOne.textContent = "Copied"; //change text of copy button to show copied
+// }
+
+// let copySecondPassword = async () => {
+//     try {
+//         await navigator.clipboard.writeText(passwordContainerTwo.innerHTML); //grab the inner html - text of the password
+//         //console.log("copied password 2");
+//     } catch (err) {
+//         console.error('Failed to copy: ', err);
+//     } copyPasswordTwo.textContent = "Copied"; //change text of copy button to show copied
+// }
